@@ -1,0 +1,73 @@
+body {
+	background: #ECE29F;
+	font-family: "Helvetica", "Lucida Console" , "Sans-serif";
+	text-align: justify;
+	color: #FFFFFF;
+}
+
+header , footer{
+	text-align: center;
+	padding: 5px 5px;
+	margin-top:15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width:850px;
+	background-color: #3366FF;
+	background-color: #BCAB3C;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+#panel_1 {
+	width: 500px;
+	height: 350px;
+	padding: 5px 5px;
+	line-height: 20px;
+	font-size: 14px;
+	border: #2C5700 2px solid;
+	margin: auto;
+	background-color: #2C5700;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#panel_2 {
+	width: 350px;
+	height: 230px;
+	padding: 5px 5px;
+	line-height: 20px;
+	font-size: 12px;
+	border: #A1B635 1px solid;
+	margin: auto;
+	background-color: #A1B635;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:15px;
+	width:90%;
+}
+
+
+/* Form------------- */
+input {
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border-color: #3366FF;
+	font-weight: bold;
+	font-size:medium;
+	/*background: #3366FF;*/
+	background: #ECE29F;
+	line-height: 1.2;	
+}
+
+h4 {
+	margin: 0px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="author" content="lsandhu" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="modal_style.css" media="all">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		
+		<!-- modal popup script -->
+		<script type="text/javascript"> 
+		$(document).ready( function(){
+			$("div#center_panel").hide();
+		
+			$("button").click(function(){
+				/* Get window height and width  */
+				var maskHeight = $(document).height();
+				var maskWidth = $(window).width();
+				
+				 //Set height and width to mask to fill up the whole screen
+				$('#mask').css({'width':maskWidth,'height':maskHeight});
+				
+				//transition effect     
+				$('#mask').fadeIn(500);    
+				$('#mask').fadeTo("slow",0.7);  
+				
+        		//Get the window height and width
+				var winH = ( ($(window).height())/2 )-120;
+				//var winW = $(window).width();
+				
+				/* set the location of popup almost halfway from the top */
+				$('#center_panel').css("margin-top", ( parseInt(winH, 10) ) + "px");
+				
+				//transition effect
+				//$(id).fadeIn(2000); 
+				$("div#center_panel").fadeIn(1000);
+				
+			});	
+			//if close button is clicked
+			$('.window .close').click(function (e) {
+				//Cancel the link behavior
+				e.preventDefault();
+				$('#mask, .window').hide();
+			});     
+     
+    		//if mask is clicked
+			$('#mask').click(function () {
+				$(this).hide();
+				$("div#center_panel").hide();
+				//$('.window').hide();
+			});         
+    
+		});
+		</script> 
+		<!--  modal popup script end -->
+	</head>
+	<body>
+		<div id="mask"></div>
+		<button>CLICK</button>  
+		
+		<div>
+			<!-- Div for modal popup START  -->
+			<div id="center_panel">
+				
+				<form  class="center" autocomplete="on" accept-charset="UTF-8" method="post" action="../scripts/edit_scripts/patient_info.php">
+					<table>
+						
+						<tr>
+							<td><h4>First</h4></td>
+							<td><h4>Last</h4></td>
+						</tr>
+						<tr>
+							<td><input type="text" name="first" size="25" autofocus="autofocus"/></td>
+							<td><input type="text" name="last" size="25"/></td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td align="right">
+								<input type="submit" value="submit"/>
+							</td>
+						</tr>
+						
+					</table>
+				</form>			
+			</div>
+			<!-- Div for modal popup END  -->
+		</div>
+	</body>
+</html>

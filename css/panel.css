@@ -1,0 +1,208 @@
+body {
+	/*background:url('../images/background1.jpg') no-repeat;*/
+	background:#222222;
+	/*background-size: 100% 100%;*/
+	font-family: "Lucida Console" , "Sans-serif";
+}
+
+header {
+	text-align: center;
+	color: #2F4600;
+	padding: 5px 5px;
+	margin: 10px;
+	background-color: #ECE29F;	
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity:0.8;
+	filter:alpha(opacity=80); 
+}
+
+footer {
+	text-align: center;
+	padding: 5px 5px;
+	margin: 10px;
+	background-color: #ECE29F;	
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity:0.8;
+	filter:alpha(opacity=80); 
+}
+
+select {
+	margin-left:300px;
+	margin-right:auto;
+	margin-top:50px;
+	background-color:#00CCFF;
+	font-family:sans-serif;
+	font-weight:bold;-moz-border-radius:5;		
+}
+
+a {
+	text-decoration:none;
+}
+
+
+/* Table CSS */
+#pane_table_tr {
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+
+#panel {
+	width: 800px;
+	height: 750px;
+	padding: 5px 5px;
+	line-height: 25px;
+	font-size: 16px;
+	border: #A1B635 1px solid;
+	margin: auto;
+	background-color: #ECE29F;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	opacity:0.8;
+	filter:alpha(opacity=80); 
+}
+
+#logo {
+	height:120px;
+	width:120px;
+	float: left;
+}
+
+
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:70px;
+	width:95%;
+}
+
+
+
+
+
+/*  Modal window CSS  */
+#mask {
+  position:absolute;
+  z-index:1;
+  background-color:#333;
+  display:none;
+}
+
+#center_panel {
+	position:absolute;
+	z-index:10;
+	display:none;
+	width: 450px;
+	height: 160px;
+	padding: 5px 5px;
+	line-height: 10px;
+	font-size: 11px;
+	border: #080008 1px solid;
+	margin: auto;
+	z-index:100;
+	background-color: #A1B635;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	
+}
+
+#table-2 tr, td{
+	vertical-align: top;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-family: Helvetica, Arial,"Bitstream Vera Sans",sans-serif;
+	margin: auto;
+}
+
+ h3 {
+	font-weight: bold;
+	font-size: large;
+}
+
+#r {
+	color:#357EC7;
+}
+
+input {
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border-color: #3366FF;
+	font-weight: bold;
+	font-size:small;
+	background: #FFF7C0;
+	line-height: 1.3;
+}
+
+.center1
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	width:90%;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	background: #666666;
+	z-index:110;
+}
+
+
+
+/* Panel buttons below  */
+.myButton {
+	-moz-box-shadow:inset 0px -10px 21px -9px #ffffff;
+	-webkit-box-shadow:inset 0px -10px 21px -9px #ffffff;
+	box-shadow:inset 0px -10px 21px -9px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #081dff), color-stop(1, #05ddfa) );
+	background:-moz-linear-gradient( center top, #081dff 5%, #05ddfa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#081dff', endColorstr='#05ddfa');
+	background-color:#081dff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #000708;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial Black;
+	font-size:14px;
+	font-weight:normal;
+	padding:9px 39px;
+	text-decoration:none;
+	text-shadow:1px 3px 0px #080008;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #05ddfa), color-stop(1, #081dff) );
+	background:-moz-linear-gradient( center top, #05ddfa 5%, #081dff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#05DDFA', endColorstr='#081DFF');
+	background-color:#05ddfa;
+}.myButton:active {
+	position:relative;
+	top:2px;
+}
+
+
+/*.myButton {
+	-moz-box-shadow:inset 0px -15px 29px -14px #ffffff;
+	-webkit-box-shadow:inset 0px -15px 29px -14px #ffffff;
+	box-shadow:inset 0px -15px 29px -14px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #081dff), color-stop(1, #05ddfa) );
+	background:-moz-linear-gradient( center top, #081dff 5%, #05ddfa 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#081dff', endColorstr='#05ddfa');
+	background-color:#081dff;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	border:1px solid #000708;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial Black;
+	font-size:19px;
+	font-weight:normal;
+	padding:9px 59px;
+	text-decoration:none;
+	text-shadow:1px 3px 0px #080008;
+} */
